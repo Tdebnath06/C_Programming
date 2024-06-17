@@ -112,7 +112,30 @@ int cLine (int argc, char *argv[])
     char *argument1 = argv[0];
     char *argument2 = argv[1];
     printf("Number of Arguments: %d\n", numberOfArguments);
-    printf("Argument 1 id yhr program name: %s\n", argument1);
+    printf("Argument 1 is the program name: %s\n", argument1);
     printf("Argument 2 is the command line argument: %s", argument2);
 }
+
+//Basic Operators - arithmetic, assignment, and relational operators
+//Logical operator - operator that returns a boolean result that's based on the boolean result of one or two other expressions
+//Assignment operator - assigns the value of the expression at its right to the variable at its left
+//Relational operator - will compare variables against eachother
+
+int arithmeticOperators() 
+{
+   int var1 = 5, var2 = 5;
+
+   // 5 is displayed
+   // Then, var1 is increased to 6.
+   printf("%d\n", var1++);
+
+   // var2 is increased to 6 
+   // Then, it is displayed.
+   printf("%d\n", ++var2);
+
+   return 0;
+}
+
+//c+=a; c=c+a; and so forth with other operations
+// a<<b = a*2^b; a>>b = a/2^b
 
