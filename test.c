@@ -2,7 +2,8 @@
 
 int main()
 {
-    int a = 10;
-    a--;
-    printf("%i", a);
+    short int i = 20;
+    char c = 97;
+    printf("%d, %d, %d\n", sizeof(i), sizeof(c), sizeof(c+i));
+    return 0;
 }

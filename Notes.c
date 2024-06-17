@@ -136,6 +136,28 @@ int arithmeticOperators()
    return 0;
 }
 
+//Bitwise Operators - operate on the bits in integer values
+
 //c+=a; c=c+a; and so forth with other operations
 // a<<b = a*2^b; a>>b = a/2^b
+/*& - Binary AND operator, copied a bit to the result if it exists in both operands; (A&B) = 12, 0000 1100
+| - Binary OR operator. copies a bit if it exists in either operand; (A|B) = 61, 0011 1101*/
+
+
+int bitwiseOperators()
+{
+    unsigned int a = 60; //001100
+    unsigned int b = 13; // 0000 1101
+    int result1 = a & b;
+    // 0000 1100
+    int result2 = a|b; //0011 1101
+    printf("The result is %d", result1); //prints 12
+    printf("The second result is: %d", result2); //prints 61
+    return 0;
+}
+
+//The Cast and sizeof operators
+//sizeof operator prints out the size of data types
+//Operator Precedence - order of operators
+//if precedence for 2 operators are the same, most of the time we go left to right
 
