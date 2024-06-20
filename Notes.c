@@ -161,3 +161,13 @@ int bitwiseOperators()
 //Operator Precedence - order of operators
 //if precedence for 2 operators are the same, most of the time we go left to right
 
+//if statements - decision making staements
+
+int ternaryStatement()
+{
+    int x;
+    int y;
+    x = y > 7 ? 25 : 50;
+    //results in x being set to 25 if y is greater than 7, or to 50 otherwise
+}
+
