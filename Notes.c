@@ -171,3 +171,73 @@ int ternaryStatement()
     //results in x being set to 25 if y is greater than 7, or to 50 otherwise
 }
 
+//Switch Statments- alternative to the else if statement; can only use if you're comparing against a constatnt, can't use for complex boolean expressions
+
+int switchStatments()
+{
+    enum Weekday {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday};
+    enum Weekday today = Monday;
+    switch(today)
+    {
+        case Sunday:
+        printf("Today is Sunday");
+        break;
+
+        case Monday:;
+        printf("Today is Monday");
+        break;
+
+        case Tuesday:
+        printf("Today is Tuesday");
+        break;
+
+        default:
+        printf("Whatever");
+        break;
+    }
+
+    return 0;
+}
+// can also work with user input and multiple user inputs
+//goto statement - don't really use it; exactly what it sounds like
+//loops
+
+
+int loops()
+{
+
+    int count = 10;
+    for(int count = 1; count <= 10; ++count)
+    {
+        printf("%d\n", count);//prints out numbers 1-10 on different lines
+    }
+    //the while loop may execute 0 times since it checks the condition first
+    //the do while loop will always execute at least once since it executes the body first and then checks the condition at the end
+    //I have not provided examples for the while and do-while loops, but they are very self explanatory
+
+    for (int i = 1; i <= count; ++i)
+    {
+        int sum = 0;
+        for(int j = 1; j <= i; ++j)
+        {
+            sum += j; 
+        }
+        
+        printf("\n%d\t%d", i, sum);
+    }
+
+    enum Day {Monday, Tuesday, Wednesday, Thurssday, Friday, Saturday, Sunday};
+    for(enum Day day = Monday; day <= Sunday; ++day)
+    {
+        if(day == Wednesday)
+        continue; // now if the day is equal to Wednesday, it will skip and continue to increment
+
+        printf("It is not Wednesday!"); //Do something usefule with day
+    }
+return 0;
+
+}
+
+
+
+

@@ -2,8 +2,11 @@
 
 int main()
 {
-    short int i = 20;
-    char c = 97;
-    printf("%d, %d, %d\n", sizeof(i), sizeof(c), sizeof(c+i));
-    return 0;
+    for(int count = 1; count <= 10; count++)
+    {
+        printf("%d\n", count);
+    }
+    
+return 0;
+
 }

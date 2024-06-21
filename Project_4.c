@@ -6,7 +6,7 @@ int main()
     printf("Please enter the amount of hours you worked this week: \n");
     scanf("%lf", &hoursWorked);
     double payRate = 12.00;
-    double overtimePayRate = 18.00;
+    double overtimePayRate = payRate * 1.5;
     double payAfterTax;
     double overtimeHours;
     double payBeforeTax;
