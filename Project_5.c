@@ -42,7 +42,4 @@ int main()
     printf("\nThe number was %d", randomNumber);
 
     return 0;
-
-
-
 }

@@ -232,11 +232,35 @@ int loops()
         if(day == Wednesday)
         continue; // now if the day is equal to Wednesday, it will skip and continue to increment
 
-        printf("It is not Wednesday!"); //Do something usefule with day
+        printf("It is not Wednesday!"); //Do something useful with day
     }
 return 0;
 
 }
+
+//Arrays - allows to store many different values of a specified types (can't mix and match types ever) in one variable
+int arrays()
+{
+    int grades[10];
+    int count = 10;
+    long sum = 0;
+    float average = 0.0f;
+    printf("\nEnter the 10 grades:\n");
+    for(int i = 0; i < count; ++i)
+    {
+     printf("%2u>", i + 1);
+     scanf("%d", &grades[i]);
+     sum += grades[i];   
+    }
+
+    average = (float)sum/count;
+    printf("\nThe average of the ten grades is:%.2f\n", average);
+}
+
+//initializing an array - int intgegers[5] = {0,1,2,3,4};
+//designated initializers will let you specify an entry and then set a value to that
+//for example: int testValues[500] = {[232] = 5, [72] = 38, [387] = 688};
+//depending on your compiler this may or may not work as it was discontinued after C99
 
 
 

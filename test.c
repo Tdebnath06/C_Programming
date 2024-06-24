@@ -2,11 +2,12 @@
 
 int main()
 {
-    for(int count = 1; count <= 10; count++)
+
+    for(int i = 0; i < 5; i++)
     {
-        printf("%d\n", count);
+        printf("Test ");
     }
-    
-return 0;
+
+    printf("\ntest pt.2");
 
 }
