@@ -260,7 +260,7 @@ int arrays()
 //initializing an array - int intgegers[5] = {0,1,2,3,4};
 //designated initializers will let you specify an entry and then set a value to that
 //for example: int testValues[500] = {[232] = 5, [72] = 38, [387] = 688};
-//depending on your compiler this may or may not work as it was discontinued after C99
+//depending on your compiler this may or may not work as it was continued after C99
 
 int twoDimensionalArray()
 {
@@ -273,8 +273,23 @@ int twoDimensionalArray()
      
 }
 
+//Variable Length Arrays - still cannot change the size of the array dynamically
 
+//Functions
+//function declaration simply means you can declare the function wherever you want. and you dont need to necessarily have a body
+// a parameter is a varaible in a function declaration and function definition/implementation
+//when a function is called, the arguments are the data you pass into the function parameters
+    //the actual value of a variable that gets passed to the function
+//parameters are defined in the function header, a function can also have no parameters
+//if you pass an array as a argument you must specify the size
 
+void multiplication(int x, int y)
+{
+    int result = x * y;
+    printf("The result of the %d multiplied by %d is: %d\n", x, y, result);
+}
+
+// you could then call this function in main and return multuplied values
 
 
 
