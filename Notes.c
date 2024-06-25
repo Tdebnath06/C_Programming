@@ -262,6 +262,19 @@ int arrays()
 //for example: int testValues[500] = {[232] = 5, [72] = 38, [387] = 688};
 //depending on your compiler this may or may not work as it was discontinued after C99
 
+int twoDimensionalArray()
+{
+    int numbers[3][4] = {
+        {10,20, 30, 40},
+        {15, 25, 35, 45},
+        {47, 48, 49, 50}
+    };
+
+     
+}
+
+
+
 
 
 
