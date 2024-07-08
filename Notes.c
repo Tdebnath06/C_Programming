@@ -291,5 +291,14 @@ void multiplication(int x, int y)
 
 // you could then call this function in main and return multuplied values
 
+//Strings
+//For strings, the char "/0" will terminate a string
+// char myString[20]; this will specify the size of your string and it stores it in the array
+//char word[] = {"Hello!"}; don't specify size, the compiler can figure it out for you 
+//%s is the format specifier for strings
+//when you use scanf, you don't need the ampersand, but it won't read spaces when reading strings
+//the #define key word can help you make constant values; #define TAXRATE 0.0015
+// can also use the const keyword; const int MONTHS = 12;
+
 
 
