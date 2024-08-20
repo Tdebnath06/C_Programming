@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include<string.h>
 
 int main()
 {
@@ -299,6 +300,67 @@ void multiplication(int x, int y)
 //when you use scanf, you don't need the ampersand, but it won't read spaces when reading strings
 //the #define key word can help you make constant values; #define TAXRATE 0.0015
 // can also use the const keyword; const int MONTHS = 12;
+
+//strlen() finds the length of the string
+//strcpy() will copy strings
+/*char src[50], dest[50]
+strcpy(src, "This is a source");
+strcpy(dest, "This is a destination");*/
+//however, strcopy() doesn't check if the string you are copying fits the size of your array
+//the safer way to copy strings is to use strncopy(), this function takes a third parameter that specifies the amount of characters
+/*strcpy(src, "Hello how are you doing");
+strncpy(dest, src, 10);*/
+//strcat() and strncat() concatenates strings
+
+int concatenate()
+{
+    char src[50], dest[50];
+
+    strcpy(src, "This is source");
+    strcpy(dest, "This is destination");
+
+    strncat(dest, src, 15);
+
+    printf("Final destination string: |%s|. dest");
+
+    return 0;
+}
+
+//strcmp() compares two strings, returns 0 if they are the same, less than 0 if str1 < str2, and greater than 0 if str2 < str1
+//strchr() and strstr() can be used to find a single char or string within a string
+//strtok() tokenizes a string, ie, breaks up a string based off delimiters
+
+int search()
+{
+    char str[] = "The quick brown fox";
+    char ch = 'q';
+    char *pGot_char = NULL;
+    pGot_char = strchr(str, ch);
+
+    return 0;
+}
+
+
+int tokenizing()
+{
+    char str[80] = "Hello how are you - my name is - Turjo";
+    const char s[2] = "-";
+    char *token;
+
+    token = strtok(str, s);
+
+    while(token != NULL)
+    {
+        printf("%s\n, token");
+
+        token = strtok(NULL, s);
+    }
+
+    return 0;
+}
+
+//there are many more functions to analyze strings
+//toupper() and tolower() are functions that do exactly what they say
 
 
 
